@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/main" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:backgroundTint = "@color/black"
+            android:textColorHighlight="#BBCAFF"
+            android:textSelectHandle="@drawable/select_handler"
+            android:textSelectHandleRight="@drawable/select_handler"
+            android:textSelectHandleLeft="@drawable/select_handler"
+            android:id="@+id/editID"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:hint="ID" />
+
+        <TextView
+            android:id="@+id/checkID"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#BBCAFF"
+            android:text="ID는 5글자 이상 작성해주세요." />
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:backgroundTint = "@color/black"
+            android:textColorHighlight="#BBCAFF"
+            android:textSelectHandle="@drawable/select_handler"
+            android:textSelectHandleRight="@drawable/select_handler"
+            android:textSelectHandleLeft="@drawable/select_handler"
+            android:id="@+id/editPW"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:hint="PW" />
+
+        <TextView
+            android:id="@+id/checkPW"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#BBCAFF"
+            android:text="PW는 영어, 숫자 조합 8~12글자로 작성해주세요." />
+
+        <CheckBox
+            android:buttonTint="#BBCAFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Password"
+            android:textColor="#666666"
+            android:layout_gravity="left"
+            android:id="@+id/pwCheck" />
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:backgroundTint = "@color/black"
+            android:textColorHighlight="#BBCAFF"
+            android:textSelectHandle="@drawable/select_handler"
+            android:textSelectHandleRight="@drawable/select_handler"
+            android:textSelectHandleLeft="@drawable/select_handler"
+            android:id="@+id/editName"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:hint="이름" />
+
+        <TextView
+            android:id="@+id/checkName"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#BBCAFF"
+            android:text="숫자와 특수문자는 제외해주세요." />
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:backgroundTint = "@color/black"
+            android:textColorHighlight="#BBCAFF"
+            android:textSelectHandle="@drawable/select_handler"
+            android:textSelectHandleRight="@drawable/select_handler"
+            android:textSelectHandleLeft="@drawable/select_handler"
+            android:id="@+id/editMail"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:hint="mail" />
+
+        <TextView
+            android:id="@+id/checkEmail"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#BBCAFF"
+            android:text="올바른 이메일이 아닙니다." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/signinOKBTN"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:text="확인" />
+
+    </LinearLayout>
+
+</LinearLayout>

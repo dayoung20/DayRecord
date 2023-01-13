@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/main" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/goalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 현재 목표"
+            android:textSize="20dp"
+            android:textColor="#BBCAFF" />
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:backgroundTint = "#BBCAFF"
+            android:textColorHighlight="#BBCAFF"
+            android:textSelectHandle="@drawable/select_handler"
+            android:textSelectHandleRight="@drawable/select_handler"
+            android:textSelectHandleLeft="@drawable/select_handler"
+            android:id="@+id/userGoalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="모바일 프로그래밍 A+"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_gravity="right"
+            android:id="@+id/finishBTN"
+            android:backgroundTint="#BBCAFF"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="성공"/>
+
+        <TextView
+            android:layout_marginTop="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="지금까지 이룬 목표"
+            android:textColor="#BBCAFF" />
+
+        <LinearLayout
+            android:background="@drawable/line"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/finishGoalListText"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/checkGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="누적된 목표가 너무 많습니다. 초기화 해주세요."
+            android:layout_marginBottom="10dp"
+            android:textColor="#FF0000" />
+
+        <Button
+            android:id="@+id/clearGoalBTN"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:layout_marginBottom="10dp"
+            android:text="목표 초기화"/>
+
+        <Button
+            android:id="@+id/backBTN"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button"
+            android:text="일정표로 돌아가기" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="20dp"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/main" />
+
+        <Button
+            android:id="@+id/logoutBTN"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:text="로그아웃" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1">
+
+        <CalendarView
+            android:theme="@style/CalenderViewCustom"
+            android:id="@+id/calenD"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/year"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#BBCAFF"
+                android:text=" / "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/month"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#BBCAFF"
+                android:text=" / "
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/day"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="오늘의 기분"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#BBCAFF" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/rgEmoji"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:buttonTint="#BBCAFF"
+                    android:id="@+id/smile"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="smile" />
+
+                <RadioButton
+                    android:buttonTint="#BBCAFF"
+                    android:id="@+id/sad"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sad" />
+
+                <RadioButton
+                    android:buttonTint="#BBCAFF"
+                    android:id="@+id/angry"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="angry" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/emoji"
+                android:background="@drawable/line"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginBottom="10dp"
+            android:id="@+id/dreamBTN"
+            android:layout_width="300dp"
+            android:background="@drawable/button"
+            android:layout_height="50dp"
+            android:text="목표설정하러 가기" />
+
+        <Button
+            android:layout_marginBottom="20dp"
+            android:id="@+id/recordBTN"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:text="오늘의 일기 작성하기" />
+
+    </LinearLayout>
+</LinearLayout>
